@@ -1,0 +1,19 @@
+{
+  "name": "api_blueprint_base",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/RikutoYamaguchi/api_blueprint_base.git",
+  "author": "RikutoYamaguchi <yamaguchirkt@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "drakov-serve": "node ./scripts/drakov.js",
+    "aglio-build": "aglio --theme-full-width -i ./src/index.apib -o ./dist/index.html",
+    "aglio-serve": "aglio --theme-full-width -i ./src/index.apib -s"
+  },
+  "devDependencies": {
+    "aglio": "^2.3.0",
+    "drakov": "^1.0.4",
+    "fs-extra": "^7.0.0",
+    "node-openssl-cert": "^0.0.47"
+  }
+}

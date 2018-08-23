@@ -1,0 +1,25 @@
+# Group Test
+
+## Test End Point [/api/test]
+
+### New Test Object [POST]
+
+- Request 
+
+    - Headers
+
+            Accept: application/json
+            
+    - Attributes
+        - testKey: testValue (string, required) - test value
+
+- Response 200 (application/json)
+    - Attributes
+        - tests (array[TestObject], required) - test collection
+
+### Get Test Objects [GET]
+
+- Response 200 (application/json)
+    - Attributes
+        - tests (array[TestObject], required) - test collection
+
